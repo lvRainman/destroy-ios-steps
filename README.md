@@ -1,16 +1,23 @@
 # destroy-ios-steps
 
-=========   stage 1: Jailbreak ===========
+========= stage 1: Jailbreak ===========
 
-Download redsn0w:
-https://www.iphonehacks.com/download-redsn0w (latest version)
+Download Absinthe:
+https://www.iphonehacks.com/download-absinthe
 
-Download IOS 3.1.3:
-https://www.mediafire.com/file/kga5cs22vc11mq3/ipod1%252C1_3.1.2_7d11_restore.ipsw/file (not needed for Iphone4, needs diff version)
+After you donwloaded the archive, extract it anywhere you like
+In the extracted folder, find absinthe icon, rightclick it, ---> select properties ---> compatibility
+place tick in "Run this program in compatibility mode for", and select Windows XP(service pack 3) - Got no fucking idea, what's that for, but it does not work otherwise :D
+Then, doubleclick absinthe icon, and wait for installation process to finish.
 
-Download Itunes v. 11.0.1:
-http://www.oldversion.com.ru/windows/download/itunes-11-0-1-12-x64
+Latest version of iTunes needs to be installed on your PC!
 
-=============================
+Connect your device via usb cable, after that - run absinthe
+Wait until absinthe recognizes your device, and then press "Jailbreak". Wait for process to finish(takes about 3-5 min),
+and do not disconnect your device
 
+========= stage 2: Preparing the device =============
+
+After device is successfully "jailbroken", some software needs to be installed.
+But first, we need to update Cydia's packages, which is going to be done automatically as soon as you enter it.
 
