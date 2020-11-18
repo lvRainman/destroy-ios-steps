@@ -43,7 +43,7 @@ OPEN 22 PORT FOR CONNECTION:
 Open POWERSHELL (AS ADMINISTRATOR, AGAIN):
 New-NetFirewallRule -Protocol TCP -LocalPort 22 -Direction Inbound -Action Allow -DisplayName SSH
 
-Check if everything works: Get-NetFirewallRule -Name *OpenSSH-Server* |select Name, DisplayName, Description, Enabled (POWERSHELL).
+Check if everything works: Get-NetFirewallRule -Name *OpenSSH-Server* |select Name, DisplayName, Description, Enabled (DO IT IN POWERSHELL).
 netstat -na| grep ":22" (grep the port, check if Listening!)
 
 Find your IP address("ipconfig" in terminal).
