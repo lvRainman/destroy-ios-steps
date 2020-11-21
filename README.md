@@ -48,7 +48,7 @@ netstat -na| grep ":22" (grep the port, check if Listening!)
 
 Find your IP address("ipconfig" in terminal).
 
-
+dd if=/dev/rdisk0 bs=4096KB | ssh ud_cl@192.168.1.2 'C:\dd-0.5\dd.exe of=iphone.img'
 
 
 
