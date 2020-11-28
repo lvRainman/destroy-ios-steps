@@ -1,5 +1,14 @@
 # destroy-ios-steps
 
+========= Stage 0: Eminem Song ========
+
+This is a long journey ahead of you, so you need some proper music!
+
+Eminem - The Real Slim Shady on Spotify:
+```
+https://open.spotify.com/album/6t7956yu5zYf5A829XRiHC?highlight=spotify:track:3yfqSUWxFvZELEM4PmlwIR
+````
+
 ========= Stage 1: Jailbreak ===========
 
 Download Absinthe:
