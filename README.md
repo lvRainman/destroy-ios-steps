@@ -33,11 +33,8 @@ Install OpenSSH server:
 https://github.com/PowerShell/Win32-OpenSSH/releases/ get Latest
 Unzip wherever you like
 
-run GitBash(AS ADMINISTRATOR, TO GET ROOT AUTHORITIES), cd .. into directory you installed OpenSSH into
+run GitBash(AS ADMINISTRATOR, TO GET ROOT AUTHORITIES), cd .. into directory you installed OpenSSH into, and
 type: powershell.exe -ExecutionPolicy Bypass -File install-sshd.ps1
-
-then generate keys:
-type: ssh-keygen.exe -A
 
 OPEN 22 PORT FOR CONNECTION:
 Open POWERSHELL (AS ADMINISTRATOR, AGAIN):
@@ -46,9 +43,21 @@ New-NetFirewallRule -Protocol TCP -LocalPort 22 -Direction Inbound -Action Allow
 Check if everything works: Get-NetFirewallRule -Name *OpenSSH-Server* |select Name, DisplayName, Description, Enabled (DO IT IN POWERSHELL).
 netstat -na| grep ":22" (grep the port, check if Listening!)
 
-Find your IP address("ipconfig" in terminal).
+If you wan't to check that everything works, you can try connecting to your Phone from your windows PC and vice versa, by typing:
+ssh myPcName@myPcIp and then entering password(from Iphone) and
+ssh root@myIphonsIp, deff password === alpine (from your pc)
 
-dd if=/dev/rdisk0 bs=4096KB | ssh ud_cl@192.168.1.2 'C:\dd-0.5\dd.exe of=iphone.img'
+Find your IP address("ipconfig" in terminal). ---> for your pc
+To find your Phones ip:
+settings -> general -> network -> select your wifi connection, look for Ip address in the list
+if you're connected, proceed to the next step.
+
+======== Stage 4: Make a disk image =========
+
+Enter Mobile terminal, type: su
+to get root authorities
+
+dd if=/dev/rdisk0 bs=1M | ssh username@ip 'C:\dd-0.5\dd.exe of=iphone.img'
 
 
 
