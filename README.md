@@ -3,7 +3,10 @@
 ========= Stage 1: Jailbreak ===========
 
 Download Absinthe:
+
+```
 https://www.iphonehacks.com/download-absinthe
+```
 
 After you donwloaded the archive, extract it anywhere you like
 In the extracted folder, find absinthe icon, rightclick it, ---> select properties ---> compatibility
